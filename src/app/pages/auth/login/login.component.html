@@ -1,0 +1,45 @@
+<div class=" m-0">
+  <div class="row fullscreen" style="position: fixed; top: 0; left: 0; bottom: 0; right: 0; overflow: auto;">
+    <div class="col-5 login-left-side d-flex justify-content-center align-items-center"></div>
+    <div class="col-7  d-flex justify-content-center">
+      <div class="col-6 d-flex align-items-center">
+        <div class="col-12">
+          <div class="pb-4 text-center">
+            <img src="assets/images/logo.jpg" style="width: 100px; height: 100px">
+            <h1 class="login fs-8 fw-bold pt-3" style="font-family: serif;"> Log in</h1>
+          </div>
+          <form [formGroup]="loginForm" class="forms">
+            <div class="form-group">
+              <label class="pb-1 text-muted" for="exampleInputEmail1">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                     placeholder="">
+            </div>
+
+
+
+            <div class="form-group  mt-3 mb-3">
+              <label class="pb-1 text-muted" for="exampleInputPassword">Password</label>
+              <input [type]="eye ? 'password' : 'text'" class="form-control" id="exampleInputPassword" name="password" placeholder="" value="">
+                  <i  (click)="look()" [class]="eye ? 'fa fa-eye' : 'fa fa-eye-slash'" id="togglePassword" style="cursor: pointer;"></i>
+            </div>
+          </form>
+
+
+
+
+          <div class="text-end mt-2 mb-1">
+            <a type="submit" style="text-decoration: none; color: #1C0988" class="new-account">Forgot Password?</a>
+          </div>
+          <div class="text-end mb-2">
+            <a type="submit" (click)="moveTo()" class="new-account col-4"
+               style="color: #443AB2; padding: 0!important;width: 36%; text-decoration: none;">Create new account</a>
+          </div>
+          <div class="">
+            <button (click)="getValue()" type="submit"  class="btn px-4 col-12" style="background-color: #002F5C; color:#FFFFFF">Login
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

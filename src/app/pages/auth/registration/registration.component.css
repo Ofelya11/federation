@@ -1,0 +1,7 @@
+.login-left-side {
+  background-image: url("src/assets/images/volleyball.jpg");
+  background-size: 147% 86%;
+}
+.overlay {
+  overscroll-behavior: contain;
+}

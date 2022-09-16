@@ -1,0 +1,10 @@
+.login-left-side {
+  background-image: url("src/assets/images/volleyball.jpg");
+  background-size: 147% 86%;
+}
+.new-account:hover {
+  text-decoration: underline!important;
+}
+.btn:hover {
+  background-color: #FDDD0A!important;
+}
